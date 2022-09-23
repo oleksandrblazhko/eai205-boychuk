@@ -1,2 +1,2 @@
 ### Опис вимог до OUTPUT-потоків інтерфейсу користувача
-![](https://user-images.githubusercontent.com/79440042/191567385-fd0c23b3-209f-423d-b461-b09520d5ac2a.png)
+![](https://user-images.githubusercontent.com/79440042/191929555-35b679f6-ca9e-4eaa-8afa-38249acdd216.png)
