@@ -9,10 +9,8 @@ start
 
 if (Is data correct?) then (Yes)
   :Data is correct!;
-  :The system changes the user's sleep data to the newly entered ones;
 else (No)
   :Your data is incorrect!;
-  start
 endif
 
 
