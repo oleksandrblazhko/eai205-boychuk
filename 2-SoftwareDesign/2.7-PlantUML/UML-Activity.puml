@@ -12,4 +12,6 @@ endwhile
 ->Yes;
 :The system changes the user's sleep data to the newly entered ones;
 
+stop
+
 @enduml
