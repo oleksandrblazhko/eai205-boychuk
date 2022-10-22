@@ -1,7 +1,5 @@
 @startuml
-
 title Usecase for Information system
-
 left to right direction
 
 actor User
