@@ -12,7 +12,7 @@ if (Is data correct?) then (Yes)
   :The system changes the user's sleep data to the newly entered ones;
 else (No)
   :Your data is incorrect!;
-  :Return to the start;
+  start
 endif
 
 
