@@ -1,1 +1,21 @@
+@startuml
 
+title Conditional - Activity Diagram 
+
+start
+
+:The user enters data about his sleep;
+:The system checks if data is correct;
+
+if (Is data correct?) then (Yes)
+  :Data is correct!;
+  :The system changes the user's sleep data to the newly entered ones;
+else (No)
+  :Your data is incorrect!;
+  :Return to the start;
+endif
+
+
+stop
+
+@enduml
