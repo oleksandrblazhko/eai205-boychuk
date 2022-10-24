@@ -1,0 +1,43 @@
+@startuml
+title Relation Schema
+hide circle
+entity "User" as user {
+  (PK)user_id
+  --
+  nickname
+  email
+}
+
+entity "Sleep_information" as sleep_info {
+  (PK)info_id
+  --
+  minutes
+  sleep_interval
+  sleep_date
+  (FK)user_id
+}
+
+entity "Library" as library {
+  (PK)library_id
+  --
+  name
+  books
+  (FK)user_id
+}
+
+entity "Book" as book {
+  (PK)book_id
+  --
+  name
+  author
+  yearof_publictn
+  transl_author
+  pages
+  (FK)library_id
+}
+
+user --{ sleep_info
+user --{ library
+book --o library
+
+@enduml

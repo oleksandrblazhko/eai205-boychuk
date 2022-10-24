@@ -1,0 +1,15 @@
+@startuml
+
+title Concept of Classes Diagram 
+
+Class Sleep_info
+Class User
+Class Library
+Class Book
+
+
+Library"1" o-- "Ny"Book 
+User"1" --> "N"Sleep_info : form 
+User"1" --> "Ny"Library : form 
+
+@enduml
