@@ -43,6 +43,11 @@ namespace Sleep_Safety_Reading.Controllers
             sleep.user = db.Users.Find(userId);
             db.Sleeps.Add(sleep);
 
+            User user = db.Users.Find(userId);
+            user.sleeps.Add(sleep);
+
+            db.Users.Add(user);
+            
             db.SaveChanges();
 
             return View();
