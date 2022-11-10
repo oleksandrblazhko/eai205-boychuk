@@ -1,5 +1,6 @@
 
 
+
 using Microsoft.AspNetCore.Mvc;
 using Sleep_Safety_Reading.Models;
 using System.Diagnostics;
@@ -51,7 +52,7 @@ namespace Sleep_Safety_Reading.Controllers
             
             db.SaveChanges();
 
-            return View();
+            return RedirectToAction("Sleeps");
         }
 
         public async Task<IActionResult> Sleeps()
