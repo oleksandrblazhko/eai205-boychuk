@@ -1,4 +1,5 @@
 
+
 using Microsoft.AspNetCore.Mvc;
 using Sleep_Safety_Reading.Models;
 using System.Diagnostics;
@@ -44,7 +45,7 @@ namespace Sleep_Safety_Reading.Controllers
             db.Sleeps.Add(sleep);
 
             User user = db.Users.Find(userId);
-            user.sleeps.Add(sleep);
+            user.addSleep(sleep);
 
             db.Users.Add(user);
             
